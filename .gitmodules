@@ -1,0 +1,6 @@
+[submodule "cloud"]
+	path = cloud
+	url = git@github.com:wiser1201/dhtRoomCloud.git
+[submodule "esp"]
+	path = esp
+	url = git@github.com:wiser1201/dhtRoomEsp.git
