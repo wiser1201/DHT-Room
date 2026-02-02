@@ -2,7 +2,7 @@
 
 This project is an end-to-end IoT project for monitoring temperature and humidity using **ESP8266** microcontroller and **DHT11** temperature-humidity sensor.
 
-The project contains two submodules: cloud and esp. Cloud corresponds to a backend logic, implemented in **Python**. ESP corresponds to esp firmware, written in **C**, that contains provisioning and application itself.
+The repository contains two submodules: cloud and esp. Cloud corresponds to a backend logic, implemented in **Python**. ESP corresponds to esp firmware, written in **C**, that contains provisioning and application itself.
 
 
 
@@ -11,11 +11,12 @@ The project contains two submodules: cloud and esp. Cloud corresponds to a backe
 The system consists of two independent parts:
 
 1. **ESP8266 firmware**
+   - ESP8266-RTOS SDK
    - Handles device web provisioning
    - Reads DHT11 sensor data
    - Sends data to the cloud
    - Manages persistent device state via NVS
-
+   - HTML + js page embedded in flash
 2. **Cloud backend**
    - FastAPI for backend logic
    - sqlite3 for databases
